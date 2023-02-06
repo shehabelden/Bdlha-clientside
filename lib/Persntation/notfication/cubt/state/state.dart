@@ -1,0 +1,4 @@
+abstract class NotificationApiState{}
+class NotificationApiInitState extends NotificationApiState{}
+class NotificationListApiState extends NotificationApiState{}
+class MapNotificationApiState extends NotificationApiState{}
