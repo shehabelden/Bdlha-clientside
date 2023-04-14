@@ -1,12 +1,13 @@
 //Dio Helper That's Connect and Talk to API.
-import 'package:bdlha/app/cache_helper/cache_helper.dart';
 import 'package:dio/dio.dart';
+
+import '../../app/cache_helper/cache_helper.dart';
  String ? tokenKey = CacheHelper.get(key: 'token_pref');
  String ? refreshToken;
  //Todo: you will replace your dio class with this class
 class DioHelper {
   static late Dio dio;
-  static String baseUrl="http://192.168.1.10:8000/";
+  static String baseUrl="https://bdlha.pythonanywhere.com/";
   //Here The Initialize of Dio and Start Connect to API Using baseUrl.
   static init() {
     dio = Dio(
@@ -47,7 +48,7 @@ class DioHelper {
   //This Function that's Used To Post Data to API based on URL(End Points) and Headers.
   static Future<Response> postData({
     required String url,
-    required Map<String, dynamic> data,
+    required  data,
     //bool files = false,
     String? token,
     ProgressCallback? onSendProgress,

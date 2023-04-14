@@ -39,10 +39,12 @@ dependencies:
   bloc: ^8.1.0
   flutter_bloc: ^8.1.1
   dio:
+  sqflite:
   shared_preferences:
   draggable_home: ^1.0.4
   iconly: ^1.0.1
   font_awesome_flutter: ^10.3.0
+  image_picker: ^0.8.7+1
 dev_dependencies:
   flutter_test:
     sdk: flutter

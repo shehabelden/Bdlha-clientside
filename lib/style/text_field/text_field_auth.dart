@@ -3,14 +3,12 @@ Widget textFieldAuth(String label,controller,height){
   return  Padding(
     padding: const EdgeInsets.only(bottom: 8.0),
     child: SizedBox(
-      child: TextFormField(
+      child: TextField(
         decoration: InputDecoration(
           labelText: label,
-          border:OutlineInputBorder()
       ),
-
         controller:controller,
       ),
-    ),
+    ),    
   );
 }
